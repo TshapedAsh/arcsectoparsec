@@ -4,6 +4,10 @@ import astropy.units as u
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Welcome to the Arcsec to Parsec Calculator! Use the '/calculate' endpoint to perform calculations."
+
 @app.route('/calculate', methods=['POST'])
 def calculate_distance():
     # Extracting arcseconds and redshift from the POST request
