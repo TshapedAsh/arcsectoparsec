@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environment
+venv/
+ENV/
+
+# Logs
+*.log
+
+# Misc
+.DS_Store
